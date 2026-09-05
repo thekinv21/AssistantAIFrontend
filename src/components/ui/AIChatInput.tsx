@@ -1,14 +1,14 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { Toggle } from '@/components/ui/toggle'
+import { Button } from '../ui/button'
+import { Toggle } from '../ui/toggle'
 
-import { Card, CardContent } from '@/components/ui/card'
-import { Textarea } from '@/components/ui/textarea'
 import { Globe, Lightbulb, Paperclip, Send } from 'lucide-react'
 import { useState } from 'react'
+import { Card, CardContent } from '../ui/card'
+import { Textarea } from '../ui/textarea'
 
-const BasicAIChatInput = () => {
+export const AIChatInput = () => {
 	const [input, setInput] = useState<string>('')
 
 	const handleInputChange = (
@@ -62,5 +62,3 @@ const BasicAIChatInput = () => {
 		</Card>
 	)
 }
-
-export default BasicAIChatInput
